@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zomato | By Naval Rathore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="inner_main">
+            <div class="header_full">
+                <header>
+                    <div class="logo">
+                        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt=""
+                            height="27px">
+                    </div>
+                    <div class="searchbar">
+                        <div class="locbar">
+                            <i class="fa-solid fa-location-dot" style="color: #ff7e8b; font-size: 20px;"></i>
+                            <div class="loc_name" style="padding: 0px 10px;">Jaipur</div>
+                            <div class="arrow relative"><i class="fa-solid fa-sort-down"></i></div>
+                        </div>
+                        <div class="s_bar_divider"></div>
+                        <div class="searchicon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                        </div>
+                    </div>
+                    <div class="header_btns">
+                        <button class="head_btn ">Log in</button>
+                        <button class="head_btn">Sign in</button>
+                    </div>
+                </header>
+                <div class="zones">
+                    <div class="zone">
+                        <div class="upper">
+                            <div class="zone_img_outer">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png"
+                                    alt="" width="30px" height="30px">
+                            </div>
+                            <div class="zone_title">Dining Out</div>
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <div class="upper">
+                            <div class="zone_img_outer" style="background-color: rgb(252, 238, 192);">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                                    alt="" width="30px" height="30px">
+                            </div>
+                            <div class="zone_title">Delivery</div>
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <div class="upper">
+                            <div class="zone_img_outer">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
+                                    alt="" width="30px" height="30px">
+                            </div>
+                            <div class="zone_title">Nightlife</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="tool">
+                        <div class="icon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        Filters
+                    </div>
+                    <div class="tool">Rating: 4.0+
+                    </div>
+                    <div class="tool">Pure Veg
+                    </div>
+                    <div class="tool">
+                        Cuisines
+                        <div class="icon" style="font-size: 12px;">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inspiration">
+            <div class="inner_cont">
+                <div class="insp_title sub_title">Inspiration for your first order</div>
+                <div class="slab">
+                    <div class="slab_tab ">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Pizza</div>
+                    </div>
+                    <div class="slab_tab">
+                        <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Burger</div>
+                    </div>
+                    <div class="slab_tab">
+                        <img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Cake</div>
+                    </div>
+                    <div class="slab_tab">
+                        <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Biryani</div>
+                    </div>
+                    <div class="slab_tab">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Thali</div>
+                    </div>
+                    <div class="slab_tab">
+                        <img src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png"
+                            alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div class="slab_tab_title"> Rolls</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="top_brands">
+            <div class="inner_cont">
+                <div class="tb_title sub_title">Top Brands for you</div>
+                <div class="slab">
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/c37b450dacb06430cc02d6c1ca82a448_1617984339.png?output-format=webp"
+                                    alt="" width="116px" height="118px">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px;"> Kanha</div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 20 min</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/ea27b8179a3d59c157dd4df0ee2c3821_1617984370.png?output-format=webp"
+                                    alt="" width="116px" height="118px">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px;"> Agarwal Caterers</div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 25 min</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img" style="background-color:rgb(246 188 67)">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/874c2b2b4554f4aed7dd3bb4e755c420_1604383614.png?output-format=webp"
+                                    alt="" width="150px" height="130px">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px;"> McDonald's</div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 39 min</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/df8d190a2879c56fa2ea6f57cbe2b335_1697627400.png?output-format=webp"
+                                    alt="" width="116px" height="118px" style="border-radius: 50%;">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px; text-align: center;"> DMB Sweets Pvt Ltd
+                            </div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 20 min</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img" style="background-color: rgb(222 180 18);">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/04fd04734fa0a4465c0aa0375d62b43b_1605029284.png?output-format=webp"
+                                    alt="" width="116px" height="118px" style="border-radius: 50%;">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px;"> Kanha</div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 20 min</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="slab_tab ">
+                            <div class="slab_tab_img">
+                                <img src="https://b.zmtcdn.com/data/brand_creatives/logos/e1dca004f682127de536b8c84e963154_1701666894.png?output-format=webp"
+                                    alt="" width="116px" height="118px">
+                            </div>
+                            <div class="slab_tab_title" style="font-size: 16px;"> Kanha</div>
+                            <div class="slab_tab_stitle" style="font-size: 14px;"> 20 min</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="restaurants">
+            <div class="inner_cont">
+                <div class="tb_title sub_title">Delivery Restaurants in Jaipur</div>
+                <div class="big_slab">
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/6/100756/f06cf41f8fe738a3b1d1fcd125ede6cc_o2_featured_v2.jpg?output-format=webp"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <div class="promoted absolute">Promoted</div>
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Agarwal Caterers</div>
+                                    <div class="r1_right">4.2<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Mithai, Desserts, Bakery, S...</div>
+                                    <div class="r2_right">₹100 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">23 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <img src="https://b.zmtcdn.com/data/pictures/chains/8/100148/49dbb6b8db9bd82a41a79d573643f4fa_o2_featured_v2.jpg?output-format=webp"
+                                    alt="" width="100%" height="248px">
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Kanha</div>
+                                    <div class="r1_right">4.1<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Mithai, Street Food, North...</div>
+                                    <div class="r2_right">₹100 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">22 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/0/100030/0e6db73f8fb1a6ef493ab822d556da32_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <div class="promoted absolute">Promoted</div>
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Bombay Misthan Bhandar</div>
+                                    <div class="r1_right">4.1<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Mithai, Desserts, North In...</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">22 min</div>
+                                </div>
+                            </div>
+                            <!-- <div class="safety">
+                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                alt="" width="48px" style="margin: 5px 0px;">
+                            <div class="sft_txt">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </div>
+                        </div> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="big_slab">
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/5/19158595/a0dd95a0cb2aa6685731e88dddf5b8b9_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Sodhani Sweets And Namkeen</div>
+                                    <div class="r1_right">4.2<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Mithai, Street Food</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">28 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <img src="https://b.zmtcdn.com/data/pictures/1/19938131/52024f0f06b7ead897810cbb1be83bfb_o2_featured_v2.jpg"
+                                    alt="" width="100%" height="248px">
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">20% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">The Waffle Bite</div>
+                                    <div class="r1_right">4.1<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Desserts, Sandwich, Coffe...</div>
+                                    <div class="r2_right">₹100 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">34 min</div>
+                                </div>
+                            </div>
+                            <!-- <div class="safety">
+                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                alt="" width="48px" style="margin: 5px 0px;">
+                            <div class="sft_txt">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </div>
+                        </div> -->
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/1/18761311/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">La Pino'z Pizza</div>
+                                    <div class="r1_right">3.9<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Pizza, Pasta, Italian, Fast F...</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">21 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="big_slab">
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/1/19411671/a350c22d22c1e538c68c35c85e7695bf_o2_featured_v2.jpg?output-format=webp"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">LunchBox - Meals and Thalis</div>
+                                    <div class="r1_right">4.2<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">North Indian, Biryani, Mug...</div>
+                                    <div class="r2_right">₹100 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">32 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <img src="https://b.zmtcdn.com/data/pictures/0/19150060/11529621332482acb00968442435cc05_o2_featured_v2.jpg"
+                                    alt="" width="100%" height="248px">
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">The Kathi Roll Express</div>
+                                    <div class="r1_right">4.1<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Rolls, Burger</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">32 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/9/20041019/d4d234d7e70c90437c443a3099e5816a_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">20% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Ghar Se Rasoi</div>
+                                    <div class="r1_right">3.9<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">North Indian, Rajasthani, C...</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">28 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="big_slab">
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/9/100159/880d78e1886f5fc605bcfa556ecab40b_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Khandelwal Pavitra Bhojanalaya</div>
+                                    <div class="r1_right">3.9<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">North Indian</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">26 min</div>
+                                </div>
+                            </div>
+                            <!-- <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <img src="https://b.zmtcdn.com/data/pictures/7/100907/fda9b829dc6530064d87bac413078cc2_o2_featured_v2.jpg"
+                                    alt="" width="100%" height="248px">
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">30% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Roop Basant Pavitra Bhojnalaya</div>
+                                    <div class="r1_right">4.1<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">North Indian, South Indian...</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">21 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/695598f38d29d0e5d3f8ffe57cfdb94c1613145422.png"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Restaurant partner follows WHO protocol
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="big_tab">
+                            <div class="bt_image relative">
+                                <div class="image_box">
+                                    <img src="https://b.zmtcdn.com/data/pictures/8/19938028/a419435aa0613b0369b891ab295d198b_o2_featured_v2.jpg"
+                                        alt="" width="100%" height="248px">
+                                </div>
+                                <!-- <div class="promoted absolute">Promoted</div> -->
+                                <div class="off absolute">50% OFF</div>
+                            </div>
+                            <div class="bt_details">
+                                <div class="r1 row">
+                                    <div class="r1_left">Lusty Lettuce</div>
+                                    <div class="r1_right">4.2<i class="fa-solid fa-star" style="font-size: 8px;"></i>
+                                    </div>
+                                </div>
+                                <div class="r2 row">
+                                    <div class="r2_left">Healthy Food, Continental...</div>
+                                    <div class="r2_right">₹150 for one</div>
+                                </div>
+                                <div class="r3 row">
+                                    <div class="r3_left"></div>
+                                    <div class="r3_right">29 min</div>
+                                </div>
+                            </div>
+                            <div class="safety">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                                    alt="" width="48px" style="margin: 5px 0px;">
+                                <div class="sft_txt">
+                                    Follows all Max Safety measures to ensure your food is safe
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="load_slab">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="inner_cont">
+                <div class="tb_title sub_title">Explore options near me</div>
+                <div class="faq_tab" tabindex="0" onclick="toggleDropdown(this)">
+                    <div class="faq_tab_title">
+                        <div class="left">Popular cuisines near me</div>
+                        <div class="right"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq_tab_content">
+                        <a href="https://www.zomato.com/bakery-restaurants-near-me" class="sc-fihHvN iDxEOF">Bakery
+                            food near me</a><span class="dot"></span><a
+                            href="https://www.zomato.com/beverages-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">Beverages food near me</a><span class="dot_small"></span><a
+                            href="https://www.zomato.com/biryani-restaurants-near-me" class="sc-fihHvN iDxEOF">Biryani
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/burger-restaurants-near-me" class="sc-fihHvN iDxEOF">Burger
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/chinese-restaurants-near-me" class="sc-fihHvN iDxEOF">Chinese
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/coffee-restaurants-near-me" class="sc-fihHvN iDxEOF">Coffee
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/continental-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">Continental food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/desserts-restaurants-near-me" class="sc-fihHvN iDxEOF">Desserts
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/italian-restaurants-near-me" class="sc-fihHvN iDxEOF">Italian
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/momos-restaurants-near-me" class="sc-fihHvN iDxEOF">Momos
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/mughlai-restaurants-near-me" class="sc-fihHvN iDxEOF">Mughlai
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/north-indian-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">North Indian food near me</a><span
+                            class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/pizza-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">Pizza
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/rajasthani-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">Rajasthani food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/rolls-restaurants-near-me" class="sc-fihHvN iDxEOF">Rolls
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/sandwich-restaurants-near-me" class="sc-fihHvN iDxEOF">Sandwich
+                            food near me</a><span class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/"
+                            class="sc-fihHvN iDxEOF">Shake food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/south-indian-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">South Indian food near me</a><span
+                            class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/street-food-restaurants-near-me"
+                            class="sc-fihHvN iDxEOF">Street food near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/tea-restaurants-near-me" class="sc-fihHvN iDxEOF">Tea food
+                            near me</a>
+                    </div>
+                </div>
+                <div class="faq_tab" tabindex="0" onclick="toggleDropdown(this)">
+                    <div class="faq_tab_title">
+                        <div class="left">Popular restaurant types near me</div>
+                        <div class="right"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq_tab_content">
+                        <a href="https://www.zomato.com/bakeries-near-me" class="sc-fihHvN iDxEOF">Bakeries near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/bars-near-me"
+                            class="sc-fihHvN iDxEOF">Bars near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/beverage-shops-near-me" class="sc-fihHvN iDxEOF">Beverage Shops
+                            near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/bhojanalya-near-me" class="sc-fihHvN iDxEOF">Bhojanalya near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/cafes-near-me"
+                            class="sc-fihHvN iDxEOF">Cafés near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/casual-dining-near-me" class="sc-fihHvN iDxEOF">Casual Dining
+                            near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/clubs-near-me" class="sc-fihHvN iDxEOF">Clubs near me</a><span
+                            class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/cocktail-bars-near-me"
+                            class="sc-fihHvN iDxEOF">Cocktail Bars near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/dessert-parlor-near-me" class="sc-fihHvN iDxEOF">Dessert
+                            Parlors near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/dhabas-near-me" class="sc-fihHvN iDxEOF">Dhabas near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/fine-dining-near-me" class="sc-fihHvN iDxEOF">Fine Dining near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/food-courts-near-me" class="sc-fihHvN iDxEOF">Food Courts near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/food-trucks-near-me" class="sc-fihHvN iDxEOF">Food Trucks near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/kiosks-near-me"
+                            class="sc-fihHvN iDxEOF">Kiosks near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/lounges-near-me" class="sc-fihHvN iDxEOF">Lounges near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/microbreweries-near-me" class="sc-fihHvN iDxEOF">Microbreweries
+                            near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/paan-shop-near-me" class="sc-fihHvN iDxEOF">Paan Shop near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a href="https://www.zomato.com/pubs-near-me"
+                            class="sc-fihHvN iDxEOF">Pubs near me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/quick-bites-near-me" class="sc-fihHvN iDxEOF">Quick Bites near
+                            me</a><span class="sc-ghsgMZ UMpfX"></span><a
+                            href="https://www.zomato.com/sweet-shops-near-me" class="sc-fihHvN iDxEOF">Sweet Shops near
+                            me</a>
+                    </div>
+                </div>
+                <div class="faq_tab" tabindex="0" onclick="toggleDropdown(this)">
+                    <div class="faq_tab_title">
+                        <div class="left">Top Restaurant Chains</div>
+                        <div class="right"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq_tab_content" style="display: flex; justify-content: space-evenly;"><a
+                            href="https://www.zomato.com/jaipur/restaurants/bikanervala"
+                            class="sc-ekulBa jgITQK">Bikanervala</a><a
+                            href="https://www.zomato.com/jaipur/restaurants/biryani-blues"
+                            class="sc-ekulBa jgITQK">Biryani Blues</a><a
+                            href="https://www.zomato.com/jaipur/restaurants/burger-king" class="sc-ekulBa jgITQK">Burger
+                            King</a><a href="https://www.zomato.com/jaipur/restaurants/burger-singh-big-punjabi-burgers"
+                            class="sc-ekulBa jgITQK">Burger Singh</a><a
+                            href="https://www.zomato.com/jaipur/restaurants/dunkin-donuts"
+                            class="sc-ekulBa jgITQK">Dunkin' Donuts</a></div>
+                </div>
+                <div class="faq_tab" tabindex="0" onclick="toggleDropdown(this)">
+                    <div class="faq_tab_title">
+                        <div class="left">Cities We Deliver To</div>
+                        <div class="right"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq_tab_content"
+                        style="display: flex; flex-direction: column; flex-wrap: wrap; height: 345px;"><a
+                            href="https://www.zomato.com/ncr/" class="sc-ekulBa jgITQK">Delhi
+                            NCR</a><a href="https://www.zomato.com/kolkata/" class="sc-ekulBa jgITQK">Kolkata</a><a
+                            href="https://www.zomato.com/mumbai/" class="sc-ekulBa jgITQK">Mumbai</a><a
+                            href="https://www.zomato.com/bangalore/" class="sc-ekulBa jgITQK">Bengaluru</a><a
+                            href="https://www.zomato.com/pune/" class="sc-ekulBa jgITQK">Pune</a><a
+                            href="https://www.zomato.com/hyderabad/" class="sc-ekulBa jgITQK">Hyderabad</a><a
+                            href="https://www.zomato.com/chennai/" class="sc-ekulBa jgITQK">Chennai</a><a
+                            href="https://www.zomato.com/lucknow/" class="sc-ekulBa jgITQK">Lucknow</a><a
+                            href="https://www.zomato.com/kochi/" class="sc-ekulBa jgITQK">Kochi</a><a
+                            href="https://www.zomato.com/jaipur/" class="sc-ekulBa jgITQK">Jaipur</a><a
+                            href="https://www.zomato.com/ahmedabad/" class="sc-ekulBa jgITQK">Ahmedabad</a><a
+                            href="https://www.zomato.com/chandigarh/" class="sc-ekulBa jgITQK">Chandigarh</a><a
+                            href="https://www.zomato.com/goa/" class="sc-ekulBa jgITQK">Goa</a><a
+                            href="https://www.zomato.com/indore/" class="sc-ekulBa jgITQK">Indore</a><a
+                            href="https://www.zomato.com/gangtok/" class="sc-ekulBa jgITQK">Gangtok</a><a
+                            href="https://www.zomato.com/nashik/" class="sc-ekulBa jgITQK">Nashik</a><a
+                            href="https://www.zomato.com/ooty/" class="sc-ekulBa jgITQK">Ooty</a><a
+                            href="https://www.zomato.com/shimla/" class="sc-ekulBa jgITQK">Shimla</a><a
+                            href="https://www.zomato.com/ludhiana/" class="sc-ekulBa jgITQK">Ludhiana</a><a
+                            href="https://www.zomato.com/guwahati/" class="sc-ekulBa jgITQK">Guwahati</a><a
+                            href="https://www.zomato.com/amritsar/" class="sc-ekulBa jgITQK">Amritsar</a><a
+                            href="https://www.zomato.com/kanpur/" class="sc-ekulBa jgITQK">Kanpur</a><a
+                            href="https://www.zomato.com/allahabad/" class="sc-ekulBa jgITQK">Allahabad</a><a
+                            href="https://www.zomato.com/aurangabad/" class="sc-ekulBa jgITQK">Aurangabad</a><a
+                            href="https://www.zomato.com/bhopal/" class="sc-ekulBa jgITQK">Bhopal</a><a
+                            href="https://www.zomato.com/ranchi/" class="sc-ekulBa jgITQK">Ranchi</a><a
+                            href="https://www.zomato.com/visakhapatnam/" class="sc-ekulBa jgITQK">Visakhapatnam</a><a
+                            href="https://www.zomato.com/bhubaneswar/" class="sc-ekulBa jgITQK">Bhubaneswar</a><a
+                            href="https://www.zomato.com/coimbatore/" class="sc-ekulBa jgITQK">Coimbatore</a><a
+                            href="https://www.zomato.com/mangalore/" class="sc-ekulBa jgITQK">Mangalore</a><a
+                            href="https://www.zomato.com/vadodara/" class="sc-ekulBa jgITQK">Vadodara</a><a
+                            href="https://www.zomato.com/nagpur/" class="sc-ekulBa jgITQK">Nagpur</a><a
+                            href="https://www.zomato.com/agra/" class="sc-ekulBa jgITQK">Agra</a><a
+                            href="https://www.zomato.com/dehradun/" class="sc-ekulBa jgITQK">Dehradun</a><a
+                            href="https://www.zomato.com/mysore/" class="sc-ekulBa jgITQK">Mysore</a><a
+                            href="https://www.zomato.com/puducherry/" class="sc-ekulBa jgITQK">Puducherry</a><a
+                            href="https://www.zomato.com/surat/" class="sc-ekulBa jgITQK">Surat</a><a
+                            href="https://www.zomato.com/varanasi/" class="sc-ekulBa jgITQK">Varanasi</a><a
+                            href="https://www.zomato.com/patna/" class="sc-ekulBa jgITQK">Patna</a><a
+                            href="https://www.zomato.com/udaipur/" class="sc-ekulBa jgITQK">Udaipur</a><a
+                            href="https://www.zomato.com/srinagar/" class="sc-ekulBa jgITQK">Srinagar</a><a
+                            href="https://www.zomato.com/khajuraho/" class="sc-ekulBa jgITQK">Khajuraho</a><a
+                            href="https://www.zomato.com/neemrana/" class="sc-ekulBa jgITQK">Neemrana</a><a
+                            href="https://www.zomato.com/cuttack/" class="sc-ekulBa jgITQK">Cuttack</a><a
+                            href="https://www.zomato.com/trivandrum/" class="sc-ekulBa jgITQK">Trivandrum</a><a
+                            href="https://www.zomato.com/haridwar/" class="sc-ekulBa jgITQK">Haridwar</a><a
+                            href="https://www.zomato.com/leh/" class="sc-ekulBa jgITQK">Leh</a><a
+                            href="https://www.zomato.com/pushkar/" class="sc-ekulBa jgITQK">Pushkar</a><a
+                            href="https://www.zomato.com/rajkot/" class="sc-ekulBa jgITQK">Rajkot</a><a
+                            href="https://www.zomato.com/madurai/" class="sc-ekulBa jgITQK">Madurai</a><a
+                            href="https://www.zomato.com/kozhikode/" class="sc-ekulBa jgITQK">Kozhikode</a><a
+                            href="https://www.zomato.com/alappuzha/" class="sc-ekulBa jgITQK">Alappuzha</a><a
+                            href="https://www.zomato.com/thrissur/" class="sc-ekulBa jgITQK">Thrissur</a><a
+                            href="https://www.zomato.com/manipal/" class="sc-ekulBa jgITQK">Manipal</a><a
+                            href="https://www.zomato.com/vijayawada/" class="sc-ekulBa jgITQK">Vijayawada</a><a
+                            href="https://www.zomato.com/jodhpur/" class="sc-ekulBa jgITQK">Jodhpur</a><a
+                            href="https://www.zomato.com/kota/" class="sc-ekulBa jgITQK">Kota</a><a
+                            href="https://www.zomato.com/ajmer/" class="sc-ekulBa jgITQK">Ajmer</a><a
+                            href="https://www.zomato.com/mussoorie/" class="sc-ekulBa jgITQK">Mussoorie</a><a
+                            href="https://www.zomato.com/rishikesh/" class="sc-ekulBa jgITQK">Rishikesh</a><a
+                            href="https://www.zomato.com/jalandhar/" class="sc-ekulBa jgITQK">Jalandhar</a><a
+                            href="https://www.zomato.com/jammu/" class="sc-ekulBa jgITQK">Jammu</a><a
+                            href="https://www.zomato.com/manali/" class="sc-ekulBa jgITQK">Manali</a><a
+                            href="https://www.zomato.com/dharamshala/" class="sc-ekulBa jgITQK">Dharamshala</a>
+                        <div class="sc-gGCbJM kDpXer"><a href="https://www.zomato.com/delivery-cities"
+                                class="sc-lcpuFF dkeVkI">See more</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="ftr">
+            <div class="inner_cont">
+                <div class="ftr_r1">
+                    <div class="logo">
+                        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt=""
+                            height="27px">
+                    </div>
+                    <div class="lang_area">
+                        <div class="area lang_area_tab">
+                            <div class="inner_area">
+                                <div class="area_list lang_area_list absolute">
+                                    <div class="upper"></div>
+                                    <div class="lower"></div>
+                                </div>
+                                <span class="flag"
+                                    style="width: 45px; height: 30px; transform: scale(0.488889);"></span>
+                                <div class="cntry_name">India</div>
+                                <i class="fa-solid fa-chevron-down"
+                                    style="font-size: 10px; display: block; margin: 0px 0px 0px 10px;"></i>
+                            </div>
+                        </div>
+                        <div class="lang lang_area_tab">
+                            <div class="inner_area">
+                                <div class="lang_list  lang_area_list absolute">
+                                    <div class="upper"></div>
+                                    <div class="lower"></div>
+                                </div>
+                                <i class="fa-solid fa-globe"
+                                    style="width: 22px; height: 18px; display: flex; justify-content: center; align-items: center; margin:0px  7px;"></i>
+                                <div class="cntry_name">English</div>
+                                <i class="fa-solid fa-chevron-down"
+                                    style="font-size: 10px; display: block; margin: 0px 0px 0px 10px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ftr_r2">
+                    <div class="ftr_r2_col">
+                        <div class="ftr_nav_heading">ABOUT ZOMATO</div>
+                        <ul class="ftr_nav_list">
+                            <li><a href="">Who We Are</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Work With Us</a></li>
+                            <li><a href="">Investor Relations</a></li>
+                            <li><a href="">Report Fraud</a></li>
+                            <li><a href="">Press Kit</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ftr_r2_col">
+                        <div class="ftr_nav_heading">ZOMAVERSE</div>
+                        <ul class="ftr_nav_list">
+                            <li><a href="">Zomato</a></li>
+                            <li><a href="">Blinkit</a></li>
+                            <li><a href="">Feeding India</a></li>
+                            <li><a href="">Hyperpure</a></li>
+                            <li><a href="">Zomaland</a></li>
+                            <!-- <li><a href="">Press Kit</a></li>
+                            <li><a href="">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="ftr_r2_col">
+                        <div class="ftr_nav_heading">FOR RESTAURANTS</div>
+                        <ul class="ftr_nav_list">
+                            <li><a href="">Partner With Us</a></li>
+                            <li><a href="">Apps for You</a></li>
+                            <!-- <li><a href="">Feeding India</a></li>
+                            <li><a href="">Hyperpure</a></li>
+                            <li><a href="">Zomaland</a></li> -->
+                            <!-- <li><a href="">Press Kit</a></li>
+                            <li><a href="">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="ftr_r2_col">
+                        <div class="ftr_nav_heading">LEARN MORE</div>
+                        <ul class="ftr_nav_list">
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <!-- <li><a href="">Zomaland</a></li> -->
+                            <!-- <li><a href="">Press Kit</a></li>
+                            <li><a href="">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="ftr_r2_col">
+                        <div class="ftr_nav_heading">SOCIAL LINKS</div>
+                        <div class="ftr_social">
+                            <a href="">
+                                <div class="icons"><i class="fa-brands fa-linkedin-in"></i></i></div>
+                            </a>
+                            <a href="">
+                                <div class="icons"><i class="fa-brands fa-facebook"
+                                        style="font-size: 24px; color: black; background-color: white;"></i></div>
+                            </a>
+                            <a href="">
+                                <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="">
+                                <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+                            </a>
+                            <a href="">
+                                <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+                            </a>
+                        </div>
+                        <div class="download">
+                            <a href="#">
+                                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                                    alt="" width="137px" height="40px">
+                            </a>
+                            <a href="#">
+                                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                                    alt="" width="137px" height="40px">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+                        Policy and Content Policies. All trademarks are properties of their respective owners.
+                        2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script>
+        function toggleDropdown(full) {
+            full.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+
+</html>
